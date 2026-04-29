@@ -1,3 +1,11 @@
+:root {
+  --warna-ungu: 168 85 247;
+  --warna-pink: 236 72 153;
+  --warna-biru: 2 132 199;
+  --warna-orange: 249 115 22;
+  --warna-tema: 2 132 199;
+}
+
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 */
@@ -600,9 +608,12 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.bg-sky-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+.bg-tema\/10 {
+  background-color: rgb(var(--warna-tema) / 0.1);
+}
+
+.bg-tema\/80 {
+  background-color: rgb(var(--warna-tema) / 0.8);
 }
 
 .px-8 {
@@ -630,6 +641,10 @@ video {
   padding-right: 1.5rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -637,6 +652,11 @@ video {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-sm {
@@ -653,19 +673,23 @@ video {
   color: rgb(186 218 85 / var(--tw-text-opacity));
 }
 
-.text-sky-900 {
-  --tw-text-opacity: 1;
-  color: rgb(12 74 110 / var(--tw-text-opacity));
+.text-tema\/100 {
+  color: rgb(var(--warna-tema) / 1);
 }
 
-.text-sky-800 {
-  --tw-text-opacity: 1;
-  color: rgb(7 89 133 / var(--tw-text-opacity));
+.text-tema\/80 {
+  color: rgb(var(--warna-tema) / 0.8);
 }
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .ring-offset-2 {
@@ -691,9 +715,8 @@ video {
   background-color: rgb(186 218 85 / 50%);
 }
 
-.hover\:bg-sky-900:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(12 74 110 / var(--tw-bg-opacity));
+.hover\:bg-tema\/100:hover {
+  background-color: rgb(var(--warna-tema) / 1);
 }
 
 .focus\:outline-none:focus {
@@ -707,7 +730,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.focus\:ring-sky-600:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(2 132 199 / var(--tw-ring-opacity));
+.focus\:ring-tema\/60:focus {
+  --tw-ring-color: rgb(var(--warna-tema) / 0.6);
 }
